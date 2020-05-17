@@ -24,7 +24,7 @@
 	<script>
 		var ctx = document.getElementById("myChart").getContext('2d');
 		var myChart = new Chart(ctx, {
-			type: 'bar',
+			type: 'column',
 
 			data: {
 				labels: [<?php while($b=mysqli_fetch_array($namaGame)) {echo '"'.$b['namaGame']. '",';} ?>],
